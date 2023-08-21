@@ -103,11 +103,11 @@ const ProductDetails = ({ product, products }) => {
                                 <span className="plus" onClick={incQty}><AiOutlinePlus /></span>
                             </p>
                         </div>
-                        <div className="buttons">
-                            <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
-                            <button type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
+                        <div style={ { "marginTop": "20px" } } className="buttons">
+                            <button type="button" className="button-5" onClick={() => onAdd(product, qty)}>Add to Cart</button>
+                            <button type="button" className="button-5" onClick={handleBuyNow}>Buy Now</button>
                             {cartItems.length >= 1 &&
-                                <button type="button" className="add-to-cart" onClick={handleCheckout}>Checkout</button>
+                                <button type="button" className="button-5" onClick={handleCheckout}>Checkout</button>
                             }
 
                         </div>
